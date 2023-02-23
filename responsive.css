@@ -36,6 +36,12 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 370px) {
     .left-section .personal-information,
   .left-section .work-experiance,
@@ -46,5 +52,9 @@
   .right-section .favorite {
     width: 15rem;
     font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
   }
 }
