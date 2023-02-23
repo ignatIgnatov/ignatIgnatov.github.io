@@ -9,9 +9,32 @@ body {
   );
 }
 
+header {
+  width: 95%;
+}
+
+header .lang {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .lang a {
+  text-decoration: none;
+  color: rgb(129, 129, 129);
+}
+
+header .lang a:hover {
+  font-weight: bold;
+  color: black;
+}
+
 main {
   display: flex;
-  margin: 4rem auto;
+  margin: 0rem auto;
   width: 90%;
   height: 90%;
   box-shadow: 2px 2px 5px 0.5px rgb(180, 179, 179);
@@ -202,10 +225,10 @@ h3 {
 
 footer {
   width: 90%;
-  margin: auto;
+  margin: 1.5rem auto 0rem auto;
   background: transparent;
   color: #8b8b8b;
-  border-top: 1px solid #8b8b8b;
+  border-top: 1px solid #adadad;
   padding: 1rem 0rem;
   display: flex;
   justify-content: space-between;
