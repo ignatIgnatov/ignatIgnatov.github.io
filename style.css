@@ -10,14 +10,10 @@ body {
 }
 
 header {
-  width: 95%;
-  margin-bottom: 0.2rem;
+  width: 90%;
+  margin: 0.2rem auto;
   display: flex;
   justify-content: space-between;
-}
-
-header .timer-list {
-  margin-left: 4rem;
 }
 
 header .lang {
