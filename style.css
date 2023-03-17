@@ -12,6 +12,12 @@ body {
 header {
   width: 95%;
   margin-bottom: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .timer-list {
+  margin-left: 4rem;
 }
 
 header .lang {
@@ -31,6 +37,17 @@ header .lang a {
 header .lang a:hover {
   font-weight: bold;
   color: black;
+}
+
+.timer, #date {
+  margin-right: 2rem;
+  color: rgb(129, 129, 129);
+}
+
+.t-text {
+  display: inline-block;
+  margin-right: 1rem;
+  
 }
 
 main {
