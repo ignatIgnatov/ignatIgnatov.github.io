@@ -1,4 +1,9 @@
 @media screen and (max-width: 1085px) {
+
+
+
+
+
   main {
     flex-direction: column;
     justify-content: center;
@@ -21,6 +26,10 @@
   .left-section .social-skills {
     width: 25rem;
   }
+
+  .t-text {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 485px) {
@@ -33,6 +42,13 @@
   .right-section .favorite {
     width: 20rem;
     font-size: 0.9rem;
+  }
+
+  .timer {
+    font-size: 0.8rem;
+  }
+  #date {
+    font-size: 0.8rem;
   }
 }
 
@@ -57,10 +73,27 @@
   h1 {
     font-size: 1.8rem;
   }
+
+  .timer {
+    font-size: 0.6rem;
+  }
+  #date {
+    font-size: 0.6rem;
+  }
 }
 
 @media screen and (max-width: 340px) {
   h1 {
     font-size: 1.7rem;
   }
+
+  .timer {
+    font-size: 0.5rem
+  }
+
+  #date {
+    font-size: 0.5rem;
+  }
+
+ 
 }
