@@ -23,44 +23,62 @@ dateElement.textContent = dateFormat;
 
 
 let hoursElement = document.getElementById("hours");
-      hoursElement.textContent = 0;
+hoursElement.textContent = Number(hoursElement.textContent);
 
-      let minutesElement = document.getElementById("minutes");
-      minutesElement.textContent = 0;
+let minutesElement = document.getElementById("minutes");
+minutesElement.textContent = Number(minutesElement.textContent);
 
-      let secondsElement = document.getElementById("seconds");
-      secondsElement.textContent = 0;
+let secondsElement = document.getElementById("seconds");
+secondsElement.textContent = Number(secondsElement.textContent);
 
-      setInterval(function () {
-        secondsElement.textContent++;
-        if (secondsElement.textContent > 59) {
-          secondsElement.textContent = 1;
-          minutesElement.textContent++;
-        }
+if (secondsElement.textContent < 10) {
+  secondsElement.textContent = `0${secondsElement.textContent}`;
+}
 
-        if (minutesElement.textContent > 59) {
-          minutesElement.textContent = 0;
-          hoursElement.textContent++;
-        }
+if (minutesElement.textContent < 10) {
+  minutesElement.textContent = `0${minutesElement.textContent}`;
+}
 
-        let hourNullElement = document.getElementById("h-null");
-        if (hoursElement.textContent >= 10) {
-          hourNullElement.style.display = "none";
-        } else {
-          hourNullElement.style.display = "inline";
-        }
+if (hoursElement.textContent < 10) {
+      hoursElement.textContent = `0${hoursElement.textContent}`;
+    }
 
-        let minuteNullElement = document.getElementById("m-null");
-        if (minutesElement.textContent >= 10) {
-          minuteNullElement.style.display = "none";
-        } else {
-          minuteNullElement.style.display = "inline";
-        }
+setInterval(function () {
+  secondsElement.textContent++;
+  if (secondsElement.textContent > 59) {
 
-        let secondsNullElement = document.getElementById("s-null");
-        if (secondsElement.textContent >= 10) {
-          secondsNullElement.style.display = "none";
-        } else {
-          secondsNullElement.style.display = "inline";
-        }
-      }, 1000);
+    secondsElement.textContent = 1;
+    minutesElement.textContent++;
+
+    if (minutesElement.textContent < 10) {
+      minutesElement.textContent = `0${minutesElement.textContent}`;
+    }
+  }
+
+  if (minutesElement.textContent > 59) {
+    
+    minutesElement.textContent = 0;
+
+    if (minutesElement.textContent < 10) {
+      minutesElement.textContent = `0${minutesElement.textContent}`;
+    }
+
+    hoursElement.textContent++;
+
+    if (hoursElement.textContent < 10) {
+      hoursElement.textContent = `0${hoursElement.textContent}`;
+    }
+  }
+
+  if (secondsElement.textContent < 10) {
+    secondsElement.textContent = `0${secondsElement.textContent}`;
+  }
+
+}, 1000);
+
+
+
+
+
+
+
