@@ -3,7 +3,7 @@ let dateElement = document.getElementById('date');
 let date = new Date();
 
 let day = date.getDate();
-let month = date.getMonth();
+let month = date.getMonth() + 1;
 let year = date.getFullYear();
 
 if (day < 10) {day = `0${day}`}
